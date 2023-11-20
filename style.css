@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
 }
 
+:root{
+    --GAP : 70px;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Poppins', sans-serif;
@@ -23,7 +27,7 @@ a{
 
 .header{
     background-color: white;
-    height: 70px;
+    height: var(--GAP);
     position: fixed;
     width: 100%;
     z-index: 10;
@@ -76,7 +80,7 @@ a{
     background-size: cover;
     min-height: 120vh;
     position: relative;
-    top: 100px;
+    top: var(--GAP);
 
     display: flex;
     justify-content: center;
@@ -186,7 +190,7 @@ a{
     min-height: 100vh;
     padding: 50px;
     position: relative;
-    top: 100px;  
+    top: var(--GAP); 
     
 }
 
@@ -309,7 +313,7 @@ a{
     background-color: gray;
     min-height: 100vh;
     position: relative;
-    top: 100px;
+    top: var(--GAP);
 }
 
 .project-main{
@@ -346,7 +350,7 @@ a{
     background-size: cover;
     min-height: 100vh;
     position: relative;
-    top: 100px;
+    top: var(--GAP);
 }
 
 /* FOOTER SECTION */
@@ -356,7 +360,7 @@ a{
     background-color: black;
     min-height: 50vh;
     position: relative;
-    top: 100px;
+    top: var(--GAP);
 }
 
 .footer-container{
