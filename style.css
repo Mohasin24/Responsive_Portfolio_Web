@@ -32,17 +32,18 @@ a{
 /* || COMMON STYLING */
 
 .btn{
-    background-color: rgba(137, 4, 190);
+    /* background-color: rgba(137, 4, 190); */
+    background-color: #007bff;
     color: #ffffff;
     width: 150px;
     font-size: 1.1rem;
     font-weight: 600;
     padding: 10px 10px;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-top: 40px;
 
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.899);  
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.899);  
 
     transition: transform 0.3s ease-in-out;
 }
@@ -52,12 +53,13 @@ a{
     position: absolute;
     width: 100%;
     height: 0;
-    background-color: rgb(90, 2, 125);
+    /* background-color: rgb(90, 2, 125); */
+    background-color: #0069D9;
     left: 0;
     bottom: 0;
     z-index: -1;
     transition: height 0.3s ease-in-out;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .btn:hover{
@@ -113,7 +115,7 @@ a{
     font-weight: 700;
 }
 
-.navbar a{
+.navbar a,button{
     color: #ffffff;
    font-size: var(--PARA-FONT-SIZE);
    font-weight: 600;
@@ -130,6 +132,23 @@ a{
     border: 3px solid #00ffff;
 }
 
+.header-cv-btn-link{
+    list-style: none;   
+}
+
+.header-cv-btn{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.header-cv-btn:hover{
+    background-color: #218838;
+}
 
 /* HOME SECTION */
 
@@ -204,6 +223,13 @@ a{
     height: auto;
 }
 
+.home-btn-sec{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 /* ABOUT SECTION */
 
 .about{
@@ -274,6 +300,10 @@ a{
     padding: 10px 20px;
     border-radius: 10px;
     margin: 5px;
+}
+
+.btn-resume{
+    margin: 30px 0 0 5px;
 }
 
 /* PROJECT SECTION */
@@ -427,7 +457,7 @@ a{
 }
 
 .footer-left h2, .footer-right h2{
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 .footer-social-icon img{
@@ -448,15 +478,16 @@ a{
 }
 
 .footer-lower{
-    padding: 30px 0;
+    padding: 15px 0;
     text-align: center;
     word-spacing: 2px;
     line-height: 2;
+    font-size: 12px;
 }   
 
 .footer-lower a{
     color: #ffffff;
     font-weight: 600;
     text-decoration: underline;
-    text-underline-offset: 5px;
+    text-underline-offset: 3px;
 }
