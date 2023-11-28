@@ -36,7 +36,6 @@ document.addEventListener('scroll', ()=>
 
 // End of nav bar color section
 
-
 // Updating the date on footer
 
 const date = document.getElementById("date");
