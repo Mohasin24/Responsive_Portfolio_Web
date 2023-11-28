@@ -19,6 +19,23 @@ function downloadCV(){
 }
 // End Download CV Section
 
+// Navbar color on scroll Section
+
+const navbarScroll = document.getElementById("nav-head");
+
+document.addEventListener('scroll', ()=>
+{
+    if(window.scrollY > 150)
+    {
+        navbarScroll.classList.add("scrolled");     
+    }
+    else{
+        navbarScroll.classList.remove("scrolled");
+    }
+})
+
+// End of nav bar color section
+
 
 // Updating the date on footer
 

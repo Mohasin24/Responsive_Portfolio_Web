@@ -22,7 +22,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
-
 }
 
 a{
@@ -79,20 +78,25 @@ a{
     border-radius: 5px;
 }
 
+
+
 /* HEADER AND NAVIGATION BAR */
 
 .header{
-    background-color: #000000;
+    background-color: white;
     height: var(--GAP);
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
     z-index: 10;
     padding: 30px;
-    border-bottom: 1px black solid;
+    box-shadow: 0 5px 15px -2px black;
     /*  */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    transition: background-color 0.2s ease-in-out;
 }
 
 .logo{
@@ -109,23 +113,23 @@ a{
 }
 
 .logo-txt{
-    color: #ffffff;
+    color: #000;
     text-transform: uppercase;
     font-size: var(--HEADING-FONT);
     font-weight: 700;
 }
 
 .navbar a,button{
-    color: #ffffff;
+    color: #000;
    font-size: var(--PARA-FONT-SIZE);
    font-weight: 600;
    margin-left: 20px;
 }
 
-.navbar a:hover, .logo-txt:hover{
+.navbar a:hover, header .logo-txt:hover{
     text-decoration: underline;
     text-underline-offset: 10px;
-    color: #00ffff
+    color: rgb(225, 0, 255);
 }
 
 .logo img:hover{
@@ -150,14 +154,29 @@ a{
     background-color: #218838;
 }
 
+/* on scroll effect */
+header.scrolled{
+    background-color: #000000;
+}
+
+header.scrolled a{
+    color: #ffffff;
+}
+
+header.scrolled .logo-txt {
+    color: #fff;
+}
+
+header.scrolled a:hover, header.scrolled .logo-txt:hover{
+    color: #00ffff;
+}
+
 /* HOME SECTION */
 
 .home{
-    background-color: #808080;
-    /* background-image: url("assets/home_pattern.jpg"); */
     background-image: url("assets/home_pattern.jpg");
     background-size: cover;
-    min-height: 120vh;
+    min-height: 100vh;
 
     display: flex;
     justify-content: center;
@@ -174,7 +193,7 @@ a{
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
 }
 
 .intro-heading{
@@ -208,7 +227,7 @@ a{
     /* vertically align center */
     position: absolute;
     left: 5px;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
     
 }
